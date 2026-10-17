@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swadisht Raja Masale | Delhi - Swad Jo Dil Jeet Le</title>
+  
+  <!-- Google Fonts & Tailwind CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Great+Vibes&family=Rozha+One&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#B71C1C',
+              darkRed: '#7F0000',
+              crimson: '#C62828',
+              gold: '#F59E0B',
+              warmGold: '#D97706',
+              lightGold: '#FDE68A',
+              cream: '#FFFDF9',
+              dark: '#1C1917',
+              spiceGreen: '#15803D'
+            }
+          },
+          fontFamily: {
+            brandScript: ['"Great Vibes"', 'cursive'],
+            brandTitle: ['"Cinzel"', 'serif'],
+            hindi: ['"Rozha One"', '"Tiro Devanagari Hindi"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          boxShadow: {
+            'royal': '0 20px 45px -15px rgba(183, 28, 28, 0.35)',
+            'gold-glow': '0 0 25px rgba(245, 158, 11, 0.45)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom styles and smooth spice particle aesthetic */
+    body {
+      background-color: #FFFDF9;
+      color: #1C1917;
+      overflow-x: hidden;
+    }
+
+    /* Ambient spice steam background */
+    .spice-radial-bg {
+      background: radial-gradient(circle at 50% 20%, rgba(245, 158, 11, 0.12) 0%, rgba(183, 28, 28, 0.05) 45%, transparent 75%);
+    }
+
+    /* Red Oval Badge Logo exact styling */
+    .swadisht-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at 40% 30%, #E53935 0%, #B71C1C 60%, #880e4f 100%);
+      border: 3.5px solid #F59E0B;
+      box-shadow: 0 0 0 2px #B71C1C, 0 8px 24px rgba(183, 28, 28, 0.4);
+      border-radius: 9999px;
+      position: relative;
+    }
+
+    .shimmer-gold {
+      background: linear-gradient(90deg, transparent, rgba(254, 240, 138, 0.5), transparent);
+      background-size: 200% 100%;
+      animation: shimmer 2.5s infinite;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(3deg); }
+    }
+
+    .animate-float {
+      animation: floatSlow 6s ease-in-out infinite;
+    }
+
+    .animate-pulse-subtle {
+      animation: pulseSubtle 3s ease-in-out infinite;
+    }
+
+    @keyframes pulseSubtle {
+      0%, 100% { opacity: 0.95; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.02); }
+    }
+
+    /* Custom 3D tilt card styling */
+    .card-3d {
+      transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease;
+      transform-style: preserve-3d;
+    }
+    .card-3d:hover {
+      transform: translateY(-8px) rotateX(4deg) rotateY(-2deg);
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FFF8E7;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C62828;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased bg-[#FFFDF9]">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-brand-darkRed via-brand-red to-brand-darkRed text-amber-200 text-xs sm:text-sm py-2 px-4 shadow-sm relative overflow-hidden z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center space-x-2 font-medium mx-auto md:mx-0">
+        <span class="inline-block w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+        <span>🚚 All India Delivery | Packing Material & Raw Spices Available for Startups!</span>
+      </div>
+      <div class="hidden md:flex items-center space-x-6 text-xs text-amber-100">
+        <span class="flex items-center gap-1">📍 Sadar Bazar & Delhi Delivery</span>
+        <a href="https://wa.me/919971172460?text=Hi%20Sachin%20ji,%20I%20want%20to%20order%20Swadisht%20Raja%20Masala" target="_blank" class="hover:text-white transition font-bold underline flex items-center gap-1">
+          📞 WhatsApp: +91 99711 72460
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="sticky top-0 bg-[#FFFDF9]/95 backdrop-blur-md border-b border-amber-100/80 z-40 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo Branding with Exact Badge Design -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="swadisht-badge px-4 py-1.5 sm:px-5 sm:py-2 shadow-lg transition-transform group-hover:scale-105">
+          <div class="text-center select-none">
+            <span class="block font-brandScript text-xl sm:text-2xl text-white tracking-wide font-bold drop-shadow leading-none">Swadisht</span>
+            <span class="block font-brandScript text-xl sm:text-2xl text-white font-bold drop-shadow -mt-1 leading-none">Raja</span>
+            <!-- Decorative flourish underline -->
+            <div class="flex items-center justify-center gap-1 -mt-0.5 opacity-90">
+              <span class="w-3 h-[1px] bg-amber-300 inline-block"></span>
+              <span class="text-[9px] text-amber-300 font-serif leading-none">✤</span>
+              <span class="w-3 h-[1px] bg-amber-300 inline-block"></span>
+            </div>
+          </div>
+        </div>
+        <div class="hidden sm:block">
+          <span class="block text-xs uppercase tracking-widest text-brand-red font-extrabold">DELHI WALA MASALA</span>
+          <span class="text-[11px] text-stone-500 font-medium">Shuddhata Jo Dil Jeet Le</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-stone-700">
+        <a href="#masalas" class="hover:text-brand-red transition-colors">Pure Masale</a>
+        <a href="#flavor-finder" class="hover:text-brand-red transition-colors flex items-center gap-1 text-amber-700">
+          <span class="animate-bounce">✨</span> Flavor Finder
+        </a>
+        <a href="#raw-material" class="hover:text-brand-red transition-colors">Raw Material & Boxes</a>
+        <a href="#founder-journey" class="hover:text-brand-red transition-colors">Founder Sachin's Story</a>
+        <a href="#reviews" class="hover:text-brand-red transition-colors">Customer Proof</a>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="flex items-center gap-3">
+        <!-- Cart Trigger -->
+        <button onclick="toggleCartDrawer(true)" class="relative p-2.5 rounded-full bg-amber-50 hover:bg-amber-100 text-stone-800 transition shadow-sm border border-amber-200">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          <span id="cart-counter-badge" class="absolute -top-1 -right-1 bg-brand-red text-white text-[11px] font-bold rounded-full w-5 h-5 flex items-center justify-center border-2 border-white">0</span>
+        </button>
+
+        <!-- WhatsApp Quick Order -->
+        <a href="https://wa.me/919971172460?text=Namaste%20Sachin%20ji,%20I%20want%20to%20order%20Swadisht%20Raja%20Masala" target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white px-4 py-2.5 rounded-full font-bold text-xs shadow-md transition transform hover:-translate-y-0.5">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+          </svg>
+          Direct Order
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-amber-100 bg-[#FFFDF9] px-6 py-4 space-y-3 font-semibold text-sm shadow-xl">
+      <a href="#masalas" onclick="toggleMobileMenu()" class="block py-1 hover:text-brand-red">Masala Range (मसाले)</a>
+      <a href="#flavor-finder" onclick="toggleMobileMenu()" class="block py-1 text-amber-700">✨ Flavor Recommender Quiz</a>
+      <a href="#raw-material" onclick="toggleMobileMenu()" class="block py-1 hover:text-brand-red">Packaging Box & Raw Material</a>
+      <a href="#founder-journey" onclick="toggleMobileMenu()" class="block py-1 hover:text-brand-red">Founder Sachin's Journey</a>
+      <a href="#reviews" onclick="toggleMobileMenu()" class="block py-1 hover:text-brand-red">Reviews & Videos</a>
+      <div class="pt-2">
+        <a href="https://wa.me/919971172460" target="_blank" class="w-full text-center flex items-center justify-center gap-2 bg-[#25D366] text-white py-2.5 rounded-xl font-bold">
+          WhatsApp: +91 99711 72460
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Floating Spice Particle Canvas Animation Layer -->
+  <div class="fixed inset-0 pointer-events-none z-10 overflow-hidden opacity-80">
+    <canvas id="spiceParticleCanvas" class="w-full h-full"></canvas>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative pt-8 pb-20 md:py-24 spice-radial-bg overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-50 border border-brand-red/20 text-brand-red text-xs sm:text-sm font-bold shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-brand-red animate-ping"></span>
+            दिल्ली का अपना पसंदीदा स्वाद | Pure & Fresh
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-stone-900 tracking-tight leading-[1.15]">
+            स्वाद जो दिल जीत ले, <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-red via-red-600 to-amber-600">
+              शुद्धता जो भरोसा दे!
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-stone-600 max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            From North Delhi to every Indian kitchen! <span class="font-semibold text-brand-darkRed">Swadisht Raja</span> brings authentic, unadulterated Shahi Paneer, Royal Chicken, and Chatpata Masala crafted from hand-picked raw spices.
+          </p>
+
+          <!-- Founder & Order highlights -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs sm:text-sm font-semibold text-stone-700">
+            <div class="flex items-center gap-2 bg-amber-50 px-3 py-1.5 rounded-lg border border-amber-200">
+              <span class="text-amber-600 text-lg">👑</span> Founder: Sachin (Delhi)
+            </div>
+            <div class="flex items-center gap-2 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200 text-emerald-800">
+              <span>📦</span> 10,000+ Boxes Dispatched
+            </div>
+            <div class="flex items-center gap-2 bg-rose-50 px-3 py-1.5 rounded-lg border border-rose-200 text-rose-800">
+              <span>✨</span> 100% Khada Masala Blend
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="#masalas" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-red to-brand-crimson text-white font-bold text-center shadow-royal hover:shadow-2xl transition transform hover:-translate-y-1 flex items-center justify-center gap-2">
+              <span>Masala Collection Dekhein</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            
+            <a href="https://wa.me/919971172460?text=Namaste%20Sachin%20Bhai,%20mujhe%20Swadisht%20Raja%20masala%20chahiye" target="_blank" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-white border-2 border-stone-200 hover:border-brand-gold text-stone-800 font-bold text-center transition flex items-center justify-center gap-2 hover:bg-amber-50/50">
+              <svg class="w-5 h-5 text-[#25D366] fill-current" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              </svg>
+              <span>WhatsApp Order (+91 99711 72460)</span>
+            </a>
+          </div>
+
+          <!-- Guarantee badge -->
+          <div class="pt-2 text-stone-500 text-xs flex items-center justify-center lg:justify-start gap-4">
+            <span>🛡️ No Artificial Colors</span>
+            <span>•</span>
+            <span>🌿 Handpicked Spices</span>
+            <span>•</span>
+            <span>📦 Doorstep Courier</span>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual 3D Showcase -->
+        <div class="lg:col-span-5 relative flex justify-center items-center">
+          
+          <!-- Outer glowing rings -->
+          <div class="absolute w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-gradient-to-tr from-amber-400/20 via-brand-red/20 to-orange-500/20 filter blur-3xl animate-pulse"></div>
+
+          <!-- Central Masala Visual Card with Brand Mascot/Badge -->
+          <div class="relative w-full max-w-sm sm:max-w-md bg-gradient-to-b from-stone-900 to-stone-950 p-6 sm:p-8 rounded-3xl text-white shadow-2xl border border-amber-500/30 card-3d">
+            
+            <!-- Top brand emblem inside card -->
+            <div class="flex justify-between items-start mb-6">
+              <div class="swadisht-badge px-4 py-1.5 shadow-md scale-95">
+                <div class="text-center">
+                  <span class="block font-brandScript text-lg text-white font-bold leading-none">Swadisht</span>
+                  <span class="block font-brandScript text-lg text-white font-bold -mt-1 leading-none">Raja</span>
+                  <div class="flex items-center justify-center gap-1 -mt-0.5 opacity-90">
+                    <span class="w-2.5 h-[1px] bg-amber-300 inline-block"></span>
+                    <span class="text-[8px] text-amber-300">✤</span>
+                    <span class="w-2.5 h-[1px] bg-amber-300 inline-block"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider">
+                ORIGINAL DELHI BLEND
+              </div>
+            </div>
+
+            <!-- Masala 3D Mock Box Visual Representation -->
+            <div class="relative h-64 rounded-2xl bg-gradient-to-br from-red-900 via-amber-950 to-stone-900 border border-amber-500/20 overflow-hidden flex flex-col justify-between p-6">
+              <div class="absolute -right-8 -top-8 w-36 h-36 bg-amber-500/10 rounded-full blur-2xl"></div>
+              
+              <!-- Floating spice graphics representation -->
+              <div class="flex justify-between items-center text-amber-400 font-hindi text-xl tracking-wide">
+                <span>शाही पनीर मसाला</span>
+                <span class="text-xs bg-amber-400/20 text-amber-300 px-2 py-0.5 rounded font-sans">100g Pack</span>
+              </div>
+
+              <div class="my-auto text-center space-y-1">
+                <div class="font-brandTitle text-3xl font-black text-amber-300 tracking-wider">SHAHI PANEER</div>
+                <div class="text-xs text-amber-200/80 font-medium">Asli Khade Masalo Ka Swad • Rich Aroma</div>
+                <div class="text-amber-400 text-sm tracking-widest pt-1">★★★★★ (4.9 / 5)</div>
+              </div>
+
+              <div class="flex justify-between items-end border-t border-amber-500/20 pt-3">
+                <div>
+                  <span class="text-[10px] text-stone-400 uppercase">Special Launch Price</span>
+                  <div class="text-xl font-bold text-amber-300">₹79 <span class="text-xs line-through text-stone-500 font-normal">₹99</span></div>
+                </div>
+                <button onclick="quickAddToCart('Shahi Paneer Masala (100g)', 79, 'शाही पनीर मसाला')" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-stone-950 px-4 py-2 rounded-xl text-xs font-bold transition shadow-lg flex items-center gap-1.5">
+                  <span>+ Quick Add</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Live Stat Highlights from Reel stats -->
+            <div class="grid grid-cols-3 gap-2 mt-4 text-center pt-2">
+              <div class="p-2 rounded-xl bg-white/5 border border-white/10">
+                <div class="text-amber-400 font-black text-sm">₹16,000</div>
+                <div class="text-[10px] text-stone-400">Advance Proofs</div>
+              </div>
+              <div class="p-2 rounded-xl bg-white/5 border border-white/10">
+                <div class="text-amber-400 font-black text-sm">10k+</div>
+                <div class="text-[10px] text-stone-400">Box Orders</div>
+              </div>
+              <div class="p-2 rounded-xl bg-white/5 border border-white/10">
+                <div class="text-amber-400 font-black text-sm">Pan India</div>
+                <div class="text-[10px] text-stone-400">Fast Delivery</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="absolute -bottom-6 -left-4 sm:left-2 bg-white/95 backdrop-blur-md p-3 rounded-2xl shadow-xl border border-stone-100 flex items-center gap-3 animate-float hidden sm:flex">
+            <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-brand-red font-bold">🌶️</div>
+            <div>
+              <p class="text-xs font-bold text-stone-800">Fresh Batch 2026</p>
+              <p class="text-[10px] text-stone-500">Koota Hua Asli Masala</p>
+            </div>
+          </div>
+
+          <div class="absolute -top-4 -right-2 bg-white/95 backdrop-blur-md p-3 rounded-2xl shadow-xl border border-stone-100 flex items-center gap-3 hidden sm:flex">
+            <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-700 font-bold">⭐</div>
+            <div>
+              <p class="text-xs font-bold text-stone-800">11.9k+ Instagram</p>
+              <p class="text-[10px] text-stone-500">@swadishtraja_official</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Spice Blend Quiz / Flavor Recommender -->
+  <section id="flavor-finder" class="py-16 bg-gradient-to-b from-amber-50/60 to-white border-y border-amber-100 relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-3 py-1 rounded-full">Interactive AI Blend Finder</span>
+        <h2 class="text-3xl font-black text-stone-900 mt-3 font-hindi">आज रसोई में क्या बन रहा है?</h2>
+        <p class="text-sm text-stone-600 mt-2">अपनी मनपसंद डिश चुनिए, हम बताएंगे सबसे सही स्वादिष्ट राजा मसाला और रेसिपी सीक्रेट!</p>
+      </div>
+
+      <!-- Quiz Options Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mb-8">
+        <button onclick="selectDish('paneer')" id="btn-paneer" class="dish-btn p-4 rounded-2xl border-2 border-stone-200 bg-white hover:border-brand-red text-center transition flex flex-col items-center gap-2 group">
+          <span class="text-3xl group-hover:scale-110 transition">🧀</span>
+          <span class="font-bold text-xs sm:text-sm text-stone-800">शाही पनीर</span>
+          <span class="text-[10px] text-stone-500">Shahi Paneer</span>
+        </button>
+
+        <button onclick="selectDish('chicken')" id="btn-chicken" class="dish-btn p-4 rounded-2xl border-2 border-stone-200 bg-white hover:border-brand-red text-center transition flex flex-col items-center gap-2 group">
+          <span class="text-3xl group-hover:scale-110 transition">🍗</span>
+          <span class="font-bold text-xs sm:text-sm text-stone-800">चिकन करी / टिक्का</span>
+          <span class="text-[10px] text-stone-500">Royal Chicken</span>
+        </button>
+
+        <button onclick="selectDish('chaat')" id="btn-chaat" class="dish-btn p-4 rounded-2xl border-2 border-stone-200 bg-white hover:border-brand-red text-center transition flex flex-col items-center gap-2 group">
+          <span class="text-3xl group-hover:scale-110 transition">🥟</span>
+          <span class="font-bold text-xs sm:text-sm text-stone-800">चाट & गोलगप्पे</span>
+          <span class="text-[10px] text-stone-500">Delhi Chaat</span>
+        </button>
+
+        <button onclick="selectDish('dal')" id="btn-dal" class="dish-btn p-4 rounded-2xl border-2 border-stone-200 bg-white hover:border-brand-red text-center transition flex flex-col items-center gap-2 group">
+          <span class="text-3xl group-hover:scale-110 transition">🍲</span>
+          <span class="font-bold text-xs sm:text-sm text-stone-800">दाल मखनी / तड़का</span>
+          <span class="text-[10px] text-stone-500">Shahi Garam Masala</span>
+        </button>
+
+        <button onclick="selectDish('biryani')" id="btn-biryani" class="dish-btn p-4 rounded-2xl border-2 border-stone-200 bg-white hover:border-brand-red text-center transition flex flex-col items-center gap-2 group">
+          <span class="text-3xl group-hover:scale-110 transition">🍚</span>
+          <span class="font-bold text-xs sm:text-sm text-stone-800">दम बिरयानी</span>
+          <span class="text-[10px] text-stone-500">Khada Masala Special</span>
+        </button>
+      </div>
+
+      <!-- Recommendation Result Box -->
+      <div id="quiz-result-box" class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-amber-200 transition-all">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="md:col-span-8 space-y-3">
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-red uppercase tracking-wider">
+              <span>⭐</span> RECOMMENDED SPICE FOR YOU
+            </div>
+            <h3 id="rec-title" class="text-2xl font-black text-stone-900 font-hindi">Swadisht Raja Shahi Paneer Masala</h3>
+            <p id="rec-desc" class="text-sm text-stone-600 leading-relaxed">
+              इसमें है जावित्री, छोटी इलायची, दालचीनी और भुने हुए जीरे का संतुलन। ग्रेवी में रेस्टोरेंट जैसी खुशबू और गाढ़ापन लाता है बिना किसी सिंथेटिक फ्लेवर के।
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1 text-xs">
+              <span id="rec-tag1" class="bg-amber-100 text-amber-900 px-3 py-1 rounded-full font-medium">✨ 1 चम्मच = 4 लोगों के लिए काफी</span>
+              <span id="rec-tag2" class="bg-red-50 text-red-900 px-3 py-1 rounded-full font-medium">🔥 Natural Color & Oil Rich</span>
+            </div>
+          </div>
+
+          <div class="md:col-span-4 bg-amber-50/60 rounded-2xl p-5 border border-amber-100 text-center space-y-3">
+            <span class="text-xs text-stone-500 uppercase tracking-wider block">Special Box Pack</span>
+            <div id="rec-price" class="text-3xl font-black text-stone-900">₹79 <span class="text-sm text-stone-400 font-normal">/ 100g</span></div>
+            <button id="rec-btn" onclick="quickAddToCart('Shahi Paneer Masala (100g)', 79, 'शाही पनीर मसाला')" class="w-full bg-brand-red hover:bg-brand-darkRed text-white py-3 rounded-xl font-bold text-sm shadow-md transition">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Masala Catalog Section -->
+  <section id="masalas" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-red bg-red-50 px-3 py-1 rounded-full">
+          <span>👑</span> दिल्ली का असली स्वाद
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-stone-900 mt-2 font-hindi">
+          स्वादिष्ट राजा प्रीमियम मसाला रेंज
+        </h2>
+        <p class="text-stone-600 text-sm mt-1 max-w-xl">
+          शुद्ध मसालों से निर्मित, नो मिलावट। हर निवाले में लज़ीज़ स्वाद और मनमोहक खुशबू।
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex items-center gap-2 mt-6 md:mt-0 overflow-x-auto pb-2 md:pb-0">
+        <button onclick="filterProducts('all')" class="filter-btn active px-4 py-2 rounded-xl text-xs font-bold bg-brand-red text-white transition shadow-sm" data-category="all">All Products</button>
+        <button onclick="filterProducts('blends')" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-stone-100 hover:bg-stone-200 text-stone-700 transition" data-category="blends">Special Blends</button>
+        <button onclick="filterProducts('pure')" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-stone-100 hover:bg-stone-200 text-stone-700 transition" data-category="pure">Khada & Pure Spices</button>
+        <button onclick="filterProducts('bulk')" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-stone-100 hover:bg-stone-200 text-stone-700 transition" data-category="bulk">B2B & Startup Packs</button>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Product 1: Shahi Paneer -->
+      <div class="product-card card-3d bg-white rounded-3xl p-6 border border-stone-200/80 shadow-md hover:shadow-xl flex flex-col justify-between" data-category="blends">
+        <div>
+          <!-- Badge overlay -->
+          <div class="flex justify-between items-center mb-4">
+            <span class="bg-amber-100 text-amber-900 text-xs font-bold px-3 py-1 rounded-full">Best Seller 🔥</span>
+            <div class="text-amber-500 text-xs font-bold flex items-center">★★★★★ (4.9)</div>
+          </div>
+
+          <!-- Illustrated Masala Box Mockup -->
+          <div class="h-48 rounded-2xl bg-gradient-to-br from-amber-700 via-brand-red to-stone-900 p-4 text-white flex flex-col justify-between shadow-inner relative overflow-hidden group">
+            <div class="flex justify-between items-start">
+              <div class="swadisht-badge px-3 py-1 scale-90 origin-top-left">
+                <span class="font-brandScript text-xs text-white font-bold leading-tight block">Swadisht Raja</span>
+              </div>
+              <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded text-amber-200">100g Box</span>
+            </div>
+            <div class="text-center my-auto">
+              <div class="text-xs uppercase tracking-widest text-amber-200 font-semibold">Special Edition</div>
+              <div class="text-2xl font-black font-hindi text-white">शाही पनीर मसाला</div>
+              <div class="text-[11px] text-amber-100/90 font-light mt-0.5">Shahi Paneer Masala Powder</div>
+            </div>
+            <div class="flex justify-between text-[10px] text-amber-200/80 border-t border-white/10 pt-1">
+              <span>Pure Spices Blend</span>
+              <span>Delhi Special</span>
+            </div>
+          </div>
+
+          <!-- Product Details -->
+          <div class="mt-5 space-y-2">
+            <h3 class="text-lg font-bold text-stone-900">Swadisht Raja Shahi Paneer Masala</h3>
+            <p class="text-xs text-stone-500 line-clamp-2">Original blend with mace, cardamom, roasted cumin, and rich aroma. Perfect for home & hotel recipes.</p>
+            
+            <div class="flex items-center gap-2 pt-2">
+              <span class="text-xl font-extrabold text-stone-900">₹79</span>
+              <span class="text-xs line-through text-stone-400">₹99</span>
+              <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">20% OFF</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-2">
+          <button onclick="quickAddToCart('Shahi Paneer Masala (100g)', 79, 'शाही पनीर मसाला')" class="flex-1 bg-stone-900 hover:bg-brand-red text-white py-2.5 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm">
+            <span>Add to Cart</span>
+          </button>
+          <a href="https://wa.me/919971172460?text=I%20want%20to%20order%20Shahi%20Paneer%20Masala" target="_blank" class="p-2.5 rounded-xl bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition" title="Order on WhatsApp">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Product 2: Chicken Masala -->
+      <div class="product-card card-3d bg-white rounded-3xl p-6 border border-stone-200/80 shadow-md hover:shadow-xl flex flex-col justify-between" data-category="blends">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <span class="bg-red-100 text-brand-red text-xs font-bold px-3 py-1 rounded-full">Non-Veg Special 🍗</span>
+            <div class="text-amber-500 text-xs font-bold flex items-center">★★★★★ (4.8)</div>
+          </div>
+
+          <div class="h-48 rounded-2xl bg-gradient-to-br from-brand-darkRed via-red-800 to-amber-900 p-4 text-white flex flex-col justify-between shadow-inner relative overflow-hidden group">
+            <div class="flex justify-between items-start">
+              <div class="swadisht-badge px-3 py-1 scale-90 origin-top-left">
+                <span class="font-brandScript text-xs text-white font-bold leading-tight block">Swadisht Raja</span>
+              </div>
+              <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded text-amber-200">100g Box</span>
+            </div>
+            <div class="text-center my-auto">
+              <div class="text-xs uppercase tracking-widest text-amber-200 font-semibold">Purani Dilli Flavour</div>
+              <div class="text-2xl font-black font-hindi text-white">रॉयल चिकन मसाला</div>
+              <div class="text-[11px] text-amber-100/90 font-light mt-0.5">Royal Chicken Masala</div>
+            </div>
+            <div class="flex justify-between text-[10px] text-amber-200/80 border-t border-white/10 pt-1">
+              <span>Rich Red Color & Spice</span>
+              <span>100% Khada Masale</span>
+            </div>
+          </div>
+
+          <div class="mt-5 space-y-2">
+            <h3 class="text-lg font-bold text-stone-900">Royal Chicken Masala (चिकन मसाला)</h3>
+            <p class="text-xs text-stone-500 line-clamp-2">Authentic Delhi style spicy and aromatic masala for gravies, roast, curry, and biryani marinade.</p>
+            
+            <div class="flex items-center gap-2 pt-2">
+              <span class="text-xl font-extrabold text-stone-900">₹85</span>
+              <span class="text-xs line-through text-stone-400">₹110</span>
+              <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">23% OFF</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-2">
+          <button onclick="quickAddToCart('Royal Chicken Masala (100g)', 85, 'रॉयल चिकन मसाला')" class="flex-1 bg-stone-900 hover:bg-brand-red text-white py-2.5 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm">
+            <span>Add to Cart</span>
+          </button>
+          <a href="https://wa.me/919971172460?text=I%20want%20to%20order%20Chicken%20Masala" target="_blank" class="p-2.5 rounded-xl bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Product 3: Chaat Masala -->
+      <div class="product-card card-3d bg-white rounded-3xl p-6 border border-stone-200/80 shadow-md hover:shadow-xl flex flex-col justify-between" data-category="blends">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">Tangy Delight 🍋</span>
+            <div class="text-amber-500 text-xs font-bold flex items-center">★★★★★ (5.0)</div>
+          </div>
+
+          <div class="h-48 rounded-2xl bg-gradient-to-br from-amber-600 via-yellow-700 to-stone-900 p-4 text-white flex flex-col justify-between shadow-inner relative overflow-hidden group">
+            <div class="flex justify-between items-start">
+              <div class="swadisht-badge px-3 py-1 scale-90 origin-top-left">
+                <span class="font-brandScript text-xs text-white font-bold leading-tight block">Swadisht Raja</span>
+              </div>
+              <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded text-amber-200">100g Box</span>
+            </div>
+            <div class="text-center my-auto">
+              <div class="text-xs uppercase tracking-widest text-amber-200 font-semibold">Super Tangy Taste</div>
+              <div class="text-2xl font-black font-hindi text-white">चटपटा चाट मसाला</div>
+              <div class="text-[11px] text-amber-100/90 font-light mt-0.5">Chatpata Chaat Masala</div>
+            </div>
+            <div class="flex justify-between text-[10px] text-amber-200/80 border-t border-white/10 pt-1">
+              <span>Amchur, Hing & Black Salt</span>
+              <span>100% Digestive</span>
+            </div>
+          </div>
+
+          <div class="mt-5 space-y-2">
+            <h3 class="text-lg font-bold text-stone-900">Chatpata Chaat Masala (चाट मसाला)</h3>
+            <p class="text-xs text-stone-500 line-clamp-2">Signature Delhi street taste for fruits, pakodas, raita, dahi bhalla and snacks.</p>
+            
+            <div class="flex items-center gap-2 pt-2">
+              <span class="text-xl font-extrabold text-stone-900">₹65</span>
+              <span class="text-xs line-through text-stone-400">₹80</span>
+              <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">18% OFF</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-2">
+          <button onclick="quickAddToCart('Chatpata Chaat Masala (100g)', 65, 'चाट मसाला')" class="flex-1 bg-stone-900 hover:bg-brand-red text-white py-2.5 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm">
+            <span>Add to Cart</span>
+          </button>
+          <a href="https://wa.me/919971172460?text=I%20want%20to%20order%20Chaat%20Masala" target="_blank" class="p-2.5 rounded-xl bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Product 4: Shahi Garam Masala -->
+      <div class="product-card card-3d bg-white rounded-3xl p-6 border border-stone-200/80 shadow-md hover:shadow-xl flex flex-col justify-between" data-category="pure">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <span class="bg-stone-100 text-stone-800 text-xs font-bold px-3 py-1 rounded-full">Royal Heritage 👑</span>
+            <div class="text-amber-500 text-xs font-bold flex items-center">★★★★★ (4.9)</div>
+          </div>
+
+          <div class="h-48 rounded-2xl bg-gradient-to-br from-stone-800 via-amber-900 to-black p-4 text-white flex flex-col justify-between shadow-inner relative overflow-hidden group">
+            <div class="flex justify-between items-start">
+              <div class="swadisht-badge px-3 py-1 scale-90 origin-top-left">
+                <span class="font-brandScript text-xs text-white font-bold leading-tight block">Swadisht Raja</span>
+              </div>
+              <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded text-amber-200">100g Box</span>
+            </div>
+            <div class="text-center my-auto">
+              <div class="text-xs uppercase tracking-widest text-amber-200 font-semibold">16 Herbs & Spices</div>
+              <div class="text-2xl font-black font-hindi text-white">शाही गरम मसाला</div>
+              <div class="text-[11px] text-amber-100/90 font-light mt-0.5">Shahi Garam Masala</div>
+            </div>
+            <div class="flex justify-between text-[10px] text-amber-200/80 border-t border-white/10 pt-1">
+              <span>Clove, Cardamom, Nutmeg</span>
+              <span>Rich Essential Oils</span>
+            </div>
+          </div>
+
+          <div class="mt-5 space-y-2">
+            <h3 class="text-lg font-bold text-stone-900">Shahi Garam Masala (शाही गरम मसाला)</h3>
+            <p class="text-xs text-stone-500 line-clamp-2">Ground at low temperatures to lock aroma. A pinch transforms everyday dal and sabzi.</p>
+            
+            <div class="flex items-center gap-2 pt-2">
+              <span class="text-xl font-extrabold text-stone-900">₹89</span>
+              <span class="text-xs line-through text-stone-400">₹115</span>
+              <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">22% OFF</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-2">
+          <button onclick="quickAddToCart('Shahi Garam Masala (100g)', 89, 'शाही गरम मसाला')" class="flex-1 bg-stone-900 hover:bg-brand-red text-white py-2.5 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm">
+            <span>Add to Cart</span>
+          </button>
+          <a href="https://wa.me/919971172460?text=I%20want%20to%20order%20Garam%20Masala" target="_blank" class="p-2.5 rounded-xl bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Product 5: Haldi & Dhaniya Pure Powder -->
+      <div class="product-card card-3d bg-white rounded-3xl p-6 border border-stone-200/80 shadow-md hover:shadow-xl flex flex-col justify-between" data-category="pure">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">High Curcumin 🌿</span>
+            <div class="text-amber-500 text-xs font-bold flex items-center">★★★★★ (4.9)</div>
+          </div>
+
+          <div class="h-48 rounded-2xl bg-gradient-to-br from-amber-500 via-yellow-600 to-amber-900 p-4 text-white flex flex-col justify-between shadow-inner relative overflow-hidden group">
+            <div class="flex justify-between items-start">
+              <div class="swadisht-badge px-3 py-1 scale-90 origin-top-left">
+                <span class="font-brandScript text-xs text-white font-bold leading-tight block">Swadisht Raja</span>
+              </div>
+              <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded text-amber-100">200g Pack</span>
+            </div>
+            <div class="text-center my-auto">
+              <div class="text-xs uppercase tracking-widest text-amber-200 font-semibold">100% Unpolished</div>
+              <div class="text-2xl font-black font-hindi text-white">शुद्ध हल्दी & धनिया</div>
+              <div class="text-[11px] text-amber-100/90 font-light mt-0.5">Pure Turmeric & Coriander Combo</div>
+            </div>
+            <div class="flex justify-between text-[10px] text-amber-200/80 border-t border-white/10 pt-1">
+              <span>Natural Oils Intact</span>
+              <span>No Starch Added</span>
+            </div>
+          </div>
+
+          <div class="mt-5 space-y-2">
+            <h3 class="text-lg font-bold text-stone-900">Pure Haldi & Dhaniya Powder Combo</h3>
+            <p class="text-xs text-stone-500 line-clamp-2">High curcumin Salem turmeric paired with aromatic whole dhaniya freshly milled.</p>
+            
+            <div class="flex items-center gap-2 pt-2">
+              <span class="text-xl font-extrabold text-stone-900">₹120</span>
+              <span class="text-xs line-through text-stone-400">₹150</span>
+              <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">20% OFF</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-2">
+          <button onclick="quickAddToCart('Pure Haldi & Dhaniya Combo', 120, 'हल्दी और धनिया कॉम्बो')" class="flex-1 bg-stone-900 hover:bg-brand-red text-white py-2.5 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm">
+            <span>Add to Cart</span>
+          </button>
+          <a href="https://wa.me/919971172460?text=I%20want%20to%20order%20Haldi%20Dhaniya%20Combo" target="_blank" class="p-2.5 rounded-xl bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Product 6: Startup Box & Raw Material Bundle -->
+      <div class="product-card card-3d bg-white rounded-3xl p-6 border-2 border-brand-red/30 shadow-lg hover:shadow-2xl flex flex-col justify-between" data-category="bulk">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <span class="bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse">Business Kit 📦</span>
+            <span class="text-xs font-bold text-brand-darkRed bg-red-50 px-2 py-0.5 rounded">All India Support</span>
+          </div>
+
+          <div class="h-48 rounded-2xl bg-gradient-to-br from-stone-900 via-brand-darkRed to-amber-950 p-4 text-white flex flex-col justify-between shadow-inner relative overflow-hidden group">
+            <div class="flex justify-between items-start">
+              <div class="swadisht-badge px-3 py-1 scale-90 origin-top-left">
+                <span class="font-brandScript text-xs text-white font-bold leading-tight block">Swadisht Raja</span>
+              </div>
+              <span class="text-[10px] bg-amber-400 text-stone-950 font-bold px-2 py-0.5 rounded">B2B Deal</span>
+            </div>
+            <div class="text-center my-auto">
+              <div class="text-xs uppercase tracking-widest text-amber-200 font-semibold">Apna Brand Shuru Karein</div>
+              <div class="text-2xl font-black font-hindi text-white">स्टार्टअप पैकेजिंग + रॉ मसाला</div>
+              <div class="text-[11px] text-amber-100/90 font-light mt-0.5">Boxes + Pouches + Raw Material</div>
+            </div>
+            <div class="flex justify-between text-[10px] text-amber-200/80 border-t border-white/10 pt-1">
+              <span>Low Investment Setup</span>
+              <span>1000 to 10k Boxes</span>
+            </div>
+          </div>
+
+          <div class="mt-5 space-y-2">
+            <h3 class="text-lg font-bold text-stone-900">Spice Startup Starter Kit (₹8,000 / ₹16k Token)</h3>
+            <p class="text-xs text-stone-500 line-clamp-2">Complete setup with printed boxes, metallic inner rolls, and wholesale spices directly from Delhi hub.</p>
+            
+            <div class="flex items-center gap-2 pt-2">
+              <span class="text-xl font-extrabold text-stone-900">₹8,000</span>
+              <span class="text-xs text-stone-500">(Advance booking order)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-2">
+          <button onclick="quickAddToCart('B2B Startup Starter Kit', 8000, 'स्टार्टअप पैकेजिंग किट')" class="flex-1 bg-brand-red hover:bg-brand-darkRed text-white py-2.5 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-md">
+            <span>Book Startup Kit</span>
+          </button>
+          <a href="https://wa.me/919971172460?text=Sachin%20bhai,%20mujhe%20packing%20material%20aur%20raw%20masala%20b2b%20deal%20chahiye" target="_blank" class="p-2.5 rounded-xl bg-[#25D366] text-white hover:opacity-90 transition">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- B2B & Raw Material Section (Inspired by Instagram Profile) -->
+  <section id="raw-material" class="py-20 bg-stone-900 text-white relative overflow-hidden">
+    <!-- Background glow -->
+    <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-red/20 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-bold">
+            <span>📦</span> B2B Wholesale & Startup Solutions
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-hindi leading-tight">
+            PACKING MATERIAL & RAW MATERIAL AVAILABLE
+          </h2>
+
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed">
+            खुद का मसाला ब्रांड शुरू करना चाहते हैं? सचिन और <span class="text-amber-400 font-semibold">Swadisht Raja</span> की टीम आपको देती है बेस्ट क्वालिटी प्रिंटेड बॉक्सेस, रोल फिल्म्स, आउटर कार्टन और प्रीमियम रॉ खड़ा मसाला।
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-brand-red/30 border border-brand-red flex items-center justify-center text-amber-300 text-sm font-bold flex-shrink-0">✓</div>
+              <div>
+                <h4 class="text-sm font-bold text-white">50g, 100g & 200g Master Boxes Ready Stock</h4>
+                <p class="text-xs text-stone-400">High GSM food-grade laminated folding cartons designed to impress customers.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-brand-red/30 border border-brand-red flex items-center justify-center text-amber-300 text-sm font-bold flex-shrink-0">✓</div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Direct Raw Spices (खड़ा मसाला) Sourcing</h4>
+                <p class="text-xs text-stone-400">Delhi wholesale rate for jeera, methi, elaichi, laung, tejpatta, & kali mirch.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-brand-red/30 border border-brand-red flex items-center justify-center text-amber-300 text-sm font-bold flex-shrink-0">✓</div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Hisar Pouch Bazar Partnership & Sealing Guidance</h4>
+                <p class="text-xs text-stone-400">Handholding for pouch sealing machines, expiry batch coding, and FSSAI packaging norms.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-4">
+            <a href="https://wa.me/919971172460?text=Namaste%20Sachin%20ji,%20mujhe%20Packing%20Material%20aur%20Raw%20Material%20chahiye" target="_blank" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-stone-950 font-black text-sm shadow-gold-glow transition transform hover:-translate-y-0.5 flex items-center gap-2">
+              <span>Talk to Sachin (+91 99711 72460)</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- B2B Visual Showcase Cards -->
+        <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+          <div class="bg-stone-800/80 border border-stone-700/80 rounded-2xl p-5 space-y-3">
+            <div class="text-3xl">📦</div>
+            <div class="text-xl font-black text-amber-400">10,000 Boxes</div>
+            <p class="text-xs text-stone-300">Bulk delivery completed for regional clients with 100% advance security.</p>
+            <div class="text-[11px] text-emerald-400 font-semibold">✓ Verified Shipment</div>
+          </div>
+
+          <div class="bg-stone-800/80 border border-stone-700/80 rounded-2xl p-5 space-y-3">
+            <div class="text-3xl">🤝</div>
+            <div class="text-xl font-black text-amber-400">3 Clients in 1 Day</div>
+            <p class="text-xs text-stone-300">Live consultation & box handover at our Delhi workshop.</p>
+            <div class="text-[11px] text-emerald-400 font-semibold">✓ In-person Dealings</div>
+          </div>
+
+          <div class="bg-stone-800/80 border border-stone-700/80 rounded-2xl p-5 space-y-3">
+            <div class="text-3xl">⚡</div>
+            <div class="text-xl font-black text-amber-400">₹8k / ₹16k</div>
+            <p class="text-xs text-stone-300">Small advance token system to start printing your branded spice lot.</p>
+            <div class="text-[11px] text-amber-300 font-semibold">✓ Low Risk Model</div>
+          </div>
+
+          <div class="bg-stone-800/80 border border-stone-700/80 rounded-2xl p-5 space-y-3">
+            <div class="text-3xl">🇮🇳</div>
+            <div class="text-xl font-black text-amber-400">All India Hub</div>
+            <p class="text-xs text-stone-300">Transport and train cargo dispatched every day directly from Delhi.</p>
+            <div class="text-[11px] text-emerald-400 font-semibold">✓ Safe Packing</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Founder Journey & Real Story Spotlight (From Sachin's Reels) -->
+  <section id="founder-journey" class="py-20 bg-[#FFFDF9]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-red bg-red-50 px-3 py-1 rounded-full">The Real Hustle</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-stone-900 mt-3 font-hindi">
+          "0 से 10,000 बॉक्स ऑर्डर तक का सफर"
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base mt-2">
+          Sachin's story behind Swadisht Raja: Building a genuine spices brand in Delhi with transparent hard work and honest raw materials.
+        </p>
+      </div>
+
+      <!-- Timeline & Reel Highlight Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Reel card 1 -->
+        <div class="bg-white rounded-3xl border border-stone-200 overflow-hidden shadow-md hover:shadow-xl transition">
+          <div class="h-48 bg-stone-900 relative p-4 flex flex-col justify-between text-white">
+            <div class="flex justify-between items-center text-xs">
+              <span class="bg-brand-red px-2.5 py-1 rounded-md font-bold">REEL #1</span>
+              <span class="text-stone-400">Delhi Hub</span>
+            </div>
+            <div>
+              <span class="text-amber-400 text-xs font-bold">10,000 BOX ORDER</span>
+              <h4 class="text-lg font-black mt-1">₹16,000 Advance Order Proof!</h4>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-stone-300">
+              <span>▶ 45k+ Views</span>
+              <span>•</span>
+              <span>Transparent Billing</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-2">
+            <p class="text-xs text-stone-600 leading-relaxed">
+              "लोग कहते थे मसाले का काम मुश्किल है, लेकिन जब क्वालिटी असली हो तो ग्राहक खुद चलकर आते हैं।" Sachin sharing the moment his biggest bulk batch was verified.
+            </p>
+            <div class="pt-2 text-xs font-bold text-stone-800 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Verified Client Delivery
+            </div>
+          </div>
+        </div>
+
+        <!-- Reel card 2 -->
+        <div class="bg-white rounded-3xl border border-stone-200 overflow-hidden shadow-md hover:shadow-xl transition">
+          <div class="h-48 bg-gradient-to-br from-amber-900 to-stone-900 relative p-4 flex flex-col justify-between text-white">
+            <div class="flex justify-between items-center text-xs">
+              <span class="bg-amber-600 px-2.5 py-1 rounded-md font-bold">PARTNERSHIP</span>
+              <span class="text-stone-400">Hisar Pouch Bazar</span>
+            </div>
+            <div>
+              <span class="text-amber-300 text-xs font-bold">RAW MATERIAL MEETS</span>
+              <h4 class="text-lg font-black mt-1">Hisar Pouch Bazar Mulaqat</h4>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-stone-300">
+              <span>🤝 Strong Supply Chain</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-2">
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Collaborating directly with packaging giants in Hisar & Delhi to bring the best nitrogen-sealed moisture-proof pouch solutions for every kitchen.
+            </p>
+            <div class="pt-2 text-xs font-bold text-stone-800 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Premium Food-Grade Seal
+            </div>
+          </div>
+        </div>
+
+        <!-- Reel card 3 -->
+        <div class="bg-white rounded-3xl border border-stone-200 overflow-hidden shadow-md hover:shadow-xl transition">
+          <div class="h-48 bg-stone-950 relative p-4 flex flex-col justify-between text-white">
+            <div class="flex justify-between items-center text-xs">
+              <span class="bg-emerald-700 px-2.5 py-1 rounded-md font-bold">STARTUP MENTOR</span>
+              <span class="text-stone-400">New Age Bharat</span>
+            </div>
+            <div>
+              <span class="text-amber-400 text-xs font-bold">YOUNG ENTREPRENEUR</span>
+              <h4 class="text-lg font-black mt-1">"At 23, Building My Own Brand"</h4>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-stone-300">
+              <span>⚡ Motivation & Action</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-2">
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Empowering youngsters across UP, Haryana, Bihar, and Delhi to start their local spice ventures with Swadisht Raja's supply network.
+            </p>
+            <div class="pt-2 text-xs font-bold text-stone-800 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span> 24x7 WhatsApp Mentorship
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Big quote banner -->
+      <div class="mt-12 p-8 rounded-3xl bg-amber-50 border border-amber-200/80 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-4">
+          <div class="swadisht-badge px-4 py-2 scale-90">
+            <span class="font-brandScript text-base text-white font-bold leading-none block">Swadisht Raja</span>
+          </div>
+          <div>
+            <h4 class="text-base font-bold text-stone-900">"हमारा एक ही उसूल है — स्वाद में कोई मिलावट नहीं!"</h4>
+            <p class="text-xs text-stone-500">— सचिन (फाउंडर, स्वादिष्ट राजा मसाला, दिल्ली)</p>
+          </div>
+        </div>
+        <a href="https://instagram.com/swadishtraja_official" target="_blank" class="px-6 py-2.5 rounded-xl bg-stone-900 text-white hover:bg-brand-red text-xs font-bold transition flex items-center gap-2">
+          <span>Follow @swadishtraja_official</span>
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Customer Reviews & Trust -->
+  <section id="reviews" class="py-20 bg-amber-50/40 border-t border-amber-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full">Kitchen & Dhaba Feedback</span>
+        <h2 class="text-3xl font-black text-stone-900 mt-2 font-hindi">ग्राहकों की सच्ची राय</h2>
+        <p class="text-xs sm:text-sm text-stone-600">Pure masalo ki taazgi aur shuddhata jo har plate me dikhe.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white p-6 rounded-3xl border border-amber-200/60 shadow-sm space-y-4">
+          <div class="flex text-amber-400 text-sm">★★★★★</div>
+          <p class="text-xs text-stone-700 leading-relaxed italic">
+            "Maine Shahi Paneer masala order kiya tha Delhi se. Ghar me sabne pucha ki kahan se mangwaya. Dhaba jaisa asli taste aur khushboo!"
+          </p>
+          <div class="flex items-center gap-3 pt-2 border-t border-stone-100">
+            <div class="w-8 h-8 rounded-full bg-red-100 text-brand-red font-bold text-xs flex items-center justify-center">R</div>
+            <div>
+              <h5 class="text-xs font-bold text-stone-900">Rohit Verma</h5>
+              <p class="text-[10px] text-stone-500">Rohini, Delhi</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-3xl border border-amber-200/60 shadow-sm space-y-4">
+          <div class="flex text-amber-400 text-sm">★★★★★</div>
+          <p class="text-xs text-stone-700 leading-relaxed italic">
+            "Sachin bhai se 2000 boxes aur raw chicken masala lia tha. Quality ek number hai. Printing bhi top notch thi. Fully trustworthy dealer."
+          </p>
+          <div class="flex items-center gap-3 pt-2 border-t border-stone-100">
+            <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-800 font-bold text-xs flex items-center justify-center">M</div>
+            <div>
+              <h5 class="text-xs font-bold text-stone-900">Manish Gupta</h5>
+              <p class="text-[10px] text-stone-500">Agra, UP (Startup Founder)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-3xl border border-amber-200/60 shadow-sm space-y-4">
+          <div class="flex text-amber-400 text-sm">★★★★★</div>
+          <p class="text-xs text-stone-700 leading-relaxed italic">
+            "Chaat masala is unbelievable! Dahi bhalla aur papdi chaat par alag hi chatpata twist aata hai. Repeat customer ban gaya hu."
+          </p>
+          <div class="flex items-center gap-3 pt-2 border-t border-stone-100">
+            <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 font-bold text-xs flex items-center justify-center">S</div>
+            <div>
+              <h5 class="text-xs font-bold text-stone-900">Sunita Sharma</h5>
+              <p class="text-[10px] text-stone-500">Faridabad, Haryana</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Shopping Cart Drawer -->
+  <div id="cart-drawer-overlay" onclick="toggleCartDrawer(false)" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+  
+  <div id="cart-drawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col justify-between">
+    
+    <!-- Cart Header -->
+    <div class="p-6 border-b border-stone-100 flex items-center justify-between bg-amber-50/50">
+      <div class="flex items-center gap-3">
+        <div class="swadisht-badge px-3 py-1 scale-75 origin-left">
+          <span class="font-brandScript text-xs text-white font-bold leading-none">Swadisht Raja</span>
+        </div>
+        <div>
+          <h3 class="text-base font-bold text-stone-900">Your Masala Cart</h3>
+          <p class="text-[11px] text-stone-500">Pure Spices Direct From Delhi</p>
+        </div>
+      </div>
+      <button onclick="toggleCartDrawer(false)" class="p-2 text-stone-400 hover:text-stone-900 rounded-full hover:bg-stone-100">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Cart Items Container -->
+    <div id="cart-items-list" class="p-6 overflow-y-auto flex-1 space-y-4">
+      <!-- Empty state initially -->
+      <div id="empty-cart-view" class="text-center py-12 space-y-3">
+        <div class="text-5xl">🌶️</div>
+        <h4 class="font-bold text-stone-800 text-sm">Aapka Cart Khali Hai!</h4>
+        <p class="text-xs text-stone-500">Apne pasandeeda Swadisht Raja masale add karein.</p>
+        <button onclick="toggleCartDrawer(false)" class="mt-2 text-xs font-bold text-brand-red underline">Continue Shopping</button>
+      </div>
+    </div>
+
+    <!-- Cart Footer & Direct WhatsApp Checkout -->
+    <div class="p-6 border-t border-stone-100 bg-[#FFFDF9] space-y-4">
+      <div class="space-y-2 text-xs">
+        <div class="flex justify-between text-stone-600">
+          <span>Subtotal</span>
+          <span id="cart-subtotal" class="font-bold text-stone-900">₹0</span>
+        </div>
+        <div class="flex justify-between text-stone-600">
+          <span>Estimated Delivery</span>
+          <span class="text-emerald-700 font-semibold">Calculated on WhatsApp</span>
+        </div>
+        <div class="flex justify-between text-base font-black text-stone-900 pt-2 border-t border-stone-200">
+          <span>Total Payable</span>
+          <span id="cart-total" class="text-brand-red">₹0</span>
+        </div>
+      </div>
+
+      <!-- User Name & Delivery Note input for WhatsApp -->
+      <div class="space-y-2">
+        <input type="text" id="cust-name" placeholder="Aapka Naam (Your Name)" class="w-full text-xs p-3 rounded-xl border border-stone-200 focus:outline-none focus:border-brand-red bg-stone-50">
+        <input type="text" id="cust-city" placeholder="City & Pincode (e.g. Delhi - 110006)" class="w-full text-xs p-3 rounded-xl border border-stone-200 focus:outline-none focus:border-brand-red bg-stone-50">
+      </div>
+
+      <!-- Checkout WhatsApp Button -->
+      <button onclick="checkoutOnWhatsApp()" class="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white py-3.5 rounded-xl font-bold text-sm shadow-md transition flex items-center justify-center gap-2">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+        <span>Send Order to WhatsApp (Sachin)</span>
+      </button>
+
+      <p class="text-[10px] text-center text-stone-400">Order details pre-filled. You can discuss customized packaging directly on chat.</p>
+    </div>
+
+  </div>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="fixed bottom-6 right-6 bg-stone-900 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 z-50 transform translate-y-24 opacity-0 transition-all duration-300">
+    <span class="text-amber-400">🌶️</span>
+    <span id="toast-text" class="text-xs font-bold">Item added to cart!</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-stone-950 text-stone-300 pt-16 pb-12 border-t-4 border-brand-red">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-stone-800">
+        
+        <!-- Brand Info & Logo -->
+        <div class="space-y-4">
+          <div class="swadisht-badge px-4 py-2">
+            <div class="text-center">
+              <span class="block font-brandScript text-xl text-white font-bold leading-none">Swadisht</span>
+              <span class="block font-brandScript text-xl text-white font-bold -mt-1 leading-none">Raja</span>
+              <div class="flex items-center justify-center gap-1 -mt-0.5 opacity-90">
+                <span class="w-3 h-[1px] bg-amber-300 inline-block"></span>
+                <span class="text-[8px] text-amber-300">✤</span>
+                <span class="w-3 h-[1px] bg-amber-300 inline-block"></span>
+              </div>
+            </div>
+          </div>
+          <p class="text-xs text-stone-400 leading-relaxed">
+            Delhi's rising spice and packaging provider. Authentic taste, premium aroma, and startup manufacturing support.
+          </p>
+          <div class="text-xs text-amber-400 font-semibold">
+            Founder: SACHIN | Delhi
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase font-hindi">मसाला कैटेगरी</h4>
+          <ul class="text-xs space-y-2 text-stone-400">
+            <li><a href="#masalas" class="hover:text-amber-300 transition">Shahi Paneer Masala</a></li>
+            <li><a href="#masalas" class="hover:text-amber-300 transition">Royal Chicken Curry Masala</a></li>
+            <li><a href="#masalas" class="hover:text-amber-300 transition">Chatpata Chaat Masala</a></li>
+            <li><a href="#masalas" class="hover:text-amber-300 transition">Shahi Garam Masala Blend</a></li>
+            <li><a href="#masalas" class="hover:text-amber-300 transition">Salem Haldi & Desi Dhaniya</a></li>
+          </ul>
+        </div>
+
+        <!-- Startup Services -->
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Startup & B2B Solutions</h4>
+          <ul class="text-xs space-y-2 text-stone-400">
+            <li><span>Printed Packaging Boxes (50g-200g)</span></li>
+            <li><span>Bulk Raw Spices (Whole/Khada)</span></li>
+            <li><span>Sealing Roll Films & Pouches</span></li>
+            <li><span>Hisar Pouch Bazar Sourcing</span></li>
+            <li><span>Advance Token Delivery Support</span></li>
+          </ul>
+        </div>
+
+        <!-- Contact & WhatsApp Details -->
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Direct Connect</h4>
+          <div class="text-xs space-y-2 text-stone-400">
+            <p class="flex items-center gap-2">
+              <span class="text-amber-400">📱 WhatsApp:</span>
+              <a href="https://wa.me/919971172460" class="text-white hover:underline font-bold">+91 99711 72460</a>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="text-amber-400">📸 Instagram:</span>
+              <a href="https://instagram.com/swadishtraja_official" target="_blank" class="text-white hover:underline">@swadishtraja_official</a>
+            </p>
+            <p class="flex items-start gap-2">
+              <span class="text-amber-400">📍 Hub:</span>
+              <span>Delhi, India (All India Delivery Available)</span>
+            </p>
+          </div>
+          <div class="pt-2">
+            <span class="text-[10px] inline-block bg-brand-red/40 border border-brand-red px-2.5 py-1 rounded text-amber-200">
+              100% Shuddh Desi Swad
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright bottom -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+        <div>© 2026 Swadisht Raja Masale (Delhi). All Rights Reserved.</div>
+        <div class="flex items-center gap-4">
+          <span>Swad Jo Dil Jeet Le</span>
+          <span>•</span>
+          <span>Crafted for Indian Kitchens</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Sticky WhatsApp Button (Mobile & Desktop) -->
+  <a href="https://wa.me/919971172460?text=Namaste%20Sachin%20ji,%20I%20want%20to%20order%20Swadisht%20Raja%20Masala" target="_blank" class="fixed bottom-6 left-6 bg-[#25D366] text-white p-3.5 rounded-full shadow-2xl hover:scale-110 transition-transform z-40 flex items-center justify-center group" title="Chat with Sachin on WhatsApp">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-bold text-xs group-hover:ml-2">WhatsApp Order</span>
+  </a>
+
+  <!-- JavaScript Application Logic -->
+  <script>
+    /* =====================================================================
+       1. Spice Particle Floating Canvas Animation
+       ===================================================================== */
+    const canvas = document.getElementById('spiceParticleCanvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    const particleColors = [
+      'rgba(183, 28, 28, 0.45)',    // Chilli red dust
+      'rgba(245, 158, 11, 0.5)',    // Haldi gold
+      'rgba(217, 119, 6, 0.35)',    // Cumin warm brown
+      'rgba(251, 191, 36, 0.4)',    // Saffron glow
+      'rgba(21, 128, 61, 0.25)'     // Coriander green speck
+    ];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    class SpiceParticle {
+      constructor() {
+        this.reset();
+      }
+      reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 3 + 1.2;
+        this.speedX = (Math.random() - 0.5) * 0.4;
+        this.speedY = -Math.random() * 0.6 - 0.2; // Slowly drifts upwards like aroma
+        this.color = particleColors[Math.floor(Math.random() * particleColors.length)];
+        this.alpha = Math.random() * 0.6 + 0.2;
+        this.rotation = Math.random() * Math.PI * 2;
+        this.rotationSpeed = (Math.random() - 0.5) * 0.02;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        this.rotation += this.rotationSpeed;
+        if (this.y < -10 || this.x < -10 || this.x > canvas.width + 10) {
+          this.reset();
+          this.y = canvas.height + 10;
+        }
+      }
+      draw() {
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.rotation);
+        ctx.fillStyle = this.color;
+        // Draw little spice flecks (some circles, some organic diamond seeds)
+        ctx.beginPath();
+        if (this.size > 2.5) {
+          ctx.ellipse(0, 0, this.size, this.size * 0.6, 0, 0, Math.PI * 2);
+        } else {
+          ctx.arc(0, 0, this.size, 0, Math.PI * 2);
+        }
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+
+    for (let i = 0; i < 45; i++) {
+      particles.push(new SpiceParticle());
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let p of particles) {
+        p.update();
+        p.draw();
+      }
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    /* =====================================================================
+       2. Shopping Cart & WhatsApp Order State
+       ===================================================================== */
+    let cart = [];
+
+    function quickAddToCart(title, price, hindiTitle) {
+      const existing = cart.find(item => item.title === title);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ title, price, hindiTitle, qty: 1 });
+      }
+      updateCartUI();
+      showToast(`Added: ${title} to your bag!`);
+    }
+
+    function changeQty(title, delta) {
+      const item = cart.find(i => i.title === title);
+      if (!item) return;
+      item.qty += delta;
+      if (item.qty <= 0) {
+        cart = cart.filter(i => i.title !== title);
+      }
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const counter = document.getElementById('cart-counter-badge');
+      const itemsList = document.getElementById('cart-items-list');
+      const subtotalEl = document.getElementById('cart-subtotal');
+      const totalEl = document.getElementById('cart-total');
+
+      const totalItemsCount = cart.reduce((acc, curr) => acc + curr.qty, 0);
+      counter.innerText = totalItemsCount;
+
+      if (cart.length === 0) {
+        itemsList.innerHTML = `
+          <div id="empty-cart-view" class="text-center py-12 space-y-3">
+            <div class="text-5xl">🌶️</div>
+            <h4 class="font-bold text-stone-800 text-sm">Aapka Cart Khali Hai!</h4>
+            <p class="text-xs text-stone-500">Apne pasandeeda Swadisht Raja masale add karein.</p>
+            <button onclick="toggleCartDrawer(false)" class="mt-2 text-xs font-bold text-brand-red underline">Continue Shopping</button>
+          </div>
+        `;
+        subtotalEl.innerText = `₹0`;
+        totalEl.innerText = `₹0`;
+        return;
+      }
+
+      let subtotal = 0;
+      let html = '';
+
+      cart.forEach(item => {
+        const itemTotal = item.price * item.qty;
+        subtotal += itemTotal;
+        html += `
+          <div class="flex items-center justify-between p-3.5 bg-stone-50 rounded-2xl border border-stone-200">
+            <div class="space-y-0.5">
+              <h5 class="font-bold text-xs text-stone-900">${item.title}</h5>
+              <div class="text-[11px] text-brand-red font-semibold">₹${item.price} each</div>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="changeQty('${item.title}', -1)" class="w-6 h-6 rounded-full bg-white border border-stone-300 text-stone-700 font-bold flex items-center justify-center text-xs hover:bg-stone-100">-</button>
+              <span class="text-xs font-bold text-stone-800 w-4 text-center">${item.qty}</span>
+              <button onclick="changeQty('${item.title}', 1)" class="w-6 h-6 rounded-full bg-white border border-stone-300 text-stone-700 font-bold flex items-center justify-center text-xs hover:bg-stone-100">+</button>
+              <span class="text-xs font-bold text-stone-900 ml-2">₹${itemTotal}</span>
+            </div>
+          </div>
+        `;
+      });
+
+      itemsList.innerHTML = html;
+      subtotalEl.innerText = `₹${subtotal}`;
+      totalEl.innerText = `₹${subtotal}`;
+    }
+
+    function toggleCartDrawer(open) {
+      const drawer = document.getElementById('cart-drawer');
+      const overlay = document.getElementById('cart-drawer-overlay');
+      if (open) {
+        overlay.classList.remove('pointer-events-none', 'opacity-0');
+        overlay.classList.add('opacity-100');
+        drawer.classList.remove('translate-x-full');
+      } else {
+        overlay.classList.add('pointer-events-none', 'opacity-0');
+        overlay.classList.remove('opacity-100');
+        drawer.classList.add('translate-x-full');
+      }
+    }
+
+    function checkoutOnWhatsApp() {
+      if (cart.length === 0) {
+        showToast('Pehle cart me masala add kijiye!');
+        return;
+      }
+
+      const name = document.getElementById('cust-name').value.trim() || 'Valued Customer';
+      const city = document.getElementById('cust-city').value.trim() || 'India';
+      
+      let message = `*👑 Naya Order - Swadisht Raja Masale*%0A`;
+      message += `--------------------------------%0A`;
+      message += `*Name:* ${encodeURIComponent(name)}%0A`;
+      message += `*City/Address:* ${encodeURIComponent(city)}%0A%0A`;
+      message += `*Ordered Items:*%0A`;
+
+      let total = 0;
+      cart.forEach((item, index) => {
+        const itemTotal = item.price * item.qty;
+        total += itemTotal;
+        message += `${index + 1}. ${encodeURIComponent(item.title)} x ${item.qty} = ₹${itemTotal}%0A`;
+      });
+
+      message += `--------------------------------%0A`;
+      message += `*Total Amount:* ₹${total}%0A`;
+      message += `--------------------------------%0A`;
+      message += `Sachin ji, please confirm dispatch timeline & UPI payment details! 🌶️`;
+
+      const whatsappUrl = `https://wa.me/919971172460?text=${message}`;
+      window.open(whatsappUrl, '_blank');
+    }
+
+    /* =====================================================================
+       3. Flavor Finder / Recipe Quiz Logic
+       ===================================================================== */
+    const recommendations = {
+      paneer: {
+        title: "Swadisht Raja Shahi Paneer Masala (शाही पनीर)",
+        desc: "इसमें है जावित्री, छोटी इलायची, दालचीनी और भुने हुए जीरे का संतुलन। पनीर ग्रेवी में रेस्टोरेंट जैसी खुशबू और रिचनेस लाता है बिना किसी सिंथेटिक फ्लेवर के।",
+        tag1: "✨ 1 बड़ा चम्मच = 4 लोगों के लिए काफी",
+        tag2: "🌿 Low-Temperature Ground",
+        price: "₹79",
+        productName: "Shahi Paneer Masala (100g)"
+      },
+      chicken: {
+        title: "Swadisht Raja Royal Chicken Masala (रॉयल चिकन)",
+        desc: "पुरानी दिल्ली के मुग़लई ज़ायके से प्रेरित! असली देगी मिर्च, कबाब चीनी और गरम मसालों का मेल जो चिकन और मटन में तीखापन और खुशबूदार रंगत घोल दे।",
+        tag1: "🍗 Non-Veg Specialist Blend",
+        tag2: "🔥 Purani Dilli Style Roast & Curry",
+        price: "₹85",
+        productName: "Royal Chicken Masala (100g)"
+      },
+      chaat: {
+        title: "Chatpata Chaat Masala (दिल्ली स्ट्रीट स्टाइल)",
+        desc: "अनारदाना, सौंठ, काला नमक, हींग और अमचूर का तीखा-खट्टा मेल। फ्रूट चाट, दही भल्ला, समोसा और शिकंजी के स्वाद को 4 गुना बढ़ा दे।",
+        tag1: "🍋 Tangy & Digestive Natural Hing",
+        tag2: "🥟 Multi-Snack Sprinkler",
+        price: "₹65",
+        productName: "Chatpata Chaat Masala (100g)"
+      },
+      dal: {
+        title: "Shahi Garam Masala Blend (शाही गरम मसाला)",
+        desc: "16 से अधिक साबुत मसालों (लौंग, दालचीनी, तेजपत्ता, जायफल) को धीमी आंच पर सेक कर तैयार किया गया। तड़के के अंत में आधी चम्मच डालें और जादू देखें!",
+        tag1: "👑 16 Whole Spices Magic",
+        tag2: "🍲 Best for Dal Tadka & Dry Sabzi",
+        price: "₹89",
+        productName: "Shahi Garam Masala (100g)"
+      },
+      biryani: {
+        title: "Khada Masala Special & Biryani Blend",
+        desc: "साबुत बड़ी इलायची, जावित्री, चक्रफूल (Star Anise), और साबुत काली मिर्च की ताजगी जो चावल के हर दाने में शाही महक भर दे।",
+        tag1: "🍚 Dum Biryani & Pulao Specialist",
+        tag2: "🌿 Hand-Sorted Whole Spices",
+        price: "₹120",
+        productName: "Pure Haldi & Dhaniya Combo"
+      }
+    };
+
+    function selectDish(dishKey) {
+      document.querySelectorAll('.dish-btn').forEach(btn => {
+        btn.classList.remove('border-brand-red', 'bg-red-50/50');
+      });
+      const selectedBtn = document.getElementById(`btn-${dishKey}`);
+      if (selectedBtn) {
+        selectedBtn.classList.add('border-brand-red', 'bg-red-50/50');
+      }
+
+      const rec = recommendations[dishKey];
+      if (rec) {
+        document.getElementById('rec-title').innerText = rec.title;
+        document.getElementById('rec-desc').innerText = rec.desc;
+        document.getElementById('rec-tag1').innerText = rec.tag1;
+        document.getElementById('rec-tag2').innerText = rec.tag2;
+        document.getElementById('rec-price').innerHTML = `${rec.price} <span class="text-sm text-stone-400 font-normal">/ 100g</span>`;
+        
+        const recBtn = document.getElementById('rec-btn');
+        recBtn.setAttribute('onclick', `quickAddToCart('${rec.productName}', ${parseInt(rec.price.replace('₹',''))}, '${rec.title}')`);
+      }
+    }
+
+    /* =====================================================================
+       4. Filter Products
+       ===================================================================== */
+    function filterProducts(category) {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-red', 'text-white');
+        btn.classList.add('bg-stone-100', 'text-stone-700');
+        if (btn.getAttribute('data-category') === category) {
+          btn.classList.add('bg-brand-red', 'text-white');
+          btn.classList.remove('bg-stone-100', 'text-stone-700');
+        }
+      });
+
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    /* =====================================================================
+       5. Mobile Navigation & Helpers
+       ===================================================================== */
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastText = document.getElementById('toast-text');
+      toastText.innerText = msg;
+      toast.classList.remove('opacity-0', 'translate-y-24');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-24');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
